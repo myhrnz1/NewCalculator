@@ -1,12 +1,12 @@
-import java.util.Scanner
+import java.util.Scanner;
 
-public class MyCalculator {
+public class NewCalculator {
   private static double firstNumber = 0;
   private static double secondNumber = 0;
   private static double answer = 0;
   private static String operator = "-1";
 
-  Scanner scan = new Scanner(System.in);
+  static Scanner scan = new Scanner(System.in);
 
   private static void add(double d1, double d2){
    //Insert your code
@@ -20,7 +20,7 @@ public class MyCalculator {
     //Insert your code
   }
 
-  private static void div(double d1, doubled d2){
+  private static void div(double d1, double d2){
     //Insert your code
   }
 
@@ -49,7 +49,7 @@ public class MyCalculator {
     
     System.out.print("Enter number: ");
     firstNumber = scan.nextDouble();
-    System.out.print("Enter operator");
+    System.out.print("Enter operator: ");
     operator = scan.next();
     System.out.print("Enter number: ");
     secondNumber = scan.nextDouble();
