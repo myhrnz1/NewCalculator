@@ -9,20 +9,20 @@ public class NewCalculator {
 
   static Scanner scan = new Scanner(System.in);
 
-  private static void add(double d1, double d2){
-   //Insert your code
+  private static void add(){
+   answer = firstNumber + secondNumber;
   }
   
-  private static void sub(double d1, double d2){
-    //Insert your code
+  private static void sub(){
+    answer = firstNumber - secondNumber;
   }
 
-  private static void mult(double d1, double d2){
-    //Insert your code
+  private static void mult(){
+    answer = firstNumber * secondNumber;
   }
 
-  private static void div(double d1, double d2){
-    //Insert your code
+  private static void div(){
+    answer = firstNumber / secondNumber;
   }
 
   private static double enterDouble(){
@@ -51,22 +51,41 @@ public class NewCalculator {
   }
 
   private static void printResult(){
-    //
+    System.out.println("The answer is: " + answer);
   }
 
   private static void printInstructions(){
     System.out.println("Step 1: Enter a number.");
     System.out.println("Step 2: Enter an operator.");
     System.out.println("Step 3: Enter a number.");
-    System.out.println("Repeat steps 2 and 3.");
-    System.out.println("Terminate software by entering anything else at step 2 or step 3.");
   }
 
   public static void main(String[] args) {
     printInstructions();
     
-    firstNumber = enterDouble();
-    enterOperator();
-    secondNumber = enterDouble();
+    String quit = "n";
+    
+    while(!quit.equals("y")) {
+      firstNumber = enterDouble();
+      enterOperator();
+      secondNumber = enterDouble();
+      if ( !(operator.equals("/") && secondNumber == 0) ){
+        if ( operator.equals("+") ) {
+          add(); 
+        } else if ( operator.equals("-") ) {
+          sub();
+        } else if ( operator.equals("*") ) {
+          mult();
+        } else if ( operator.equals("/") ) {
+          div();
+        }
+        printResult();
+      } else {
+        System.out.println("You are dividing by zero! Try again!");
+      }
+      System.out.println("Quit? 'y' for yes");
+      quit = scan.next();
+      operator = "-1";
+    }
   }
 }
