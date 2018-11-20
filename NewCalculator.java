@@ -33,7 +33,11 @@ public class MyCalculator {
   }
 
   private static void printInstructions(){
-    //
+    System.out.println("Step 1: Enter a number.");
+    System.out.println("Step 2: Enter an operator.");
+    System.out.println("Step 3: Enter a number.");
+    System.out.println("Repeat steps 2 and 3.");
+    System.out.println("Terminate software by entering anything else at step 2 or step 3.");
   }
 
   public static void main(String[] args) {
