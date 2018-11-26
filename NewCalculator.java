@@ -9,19 +9,19 @@ public class NewCalculator {
 
   static Scanner scan = new Scanner(System.in);
 
-  private static void add(){
+  public static void add(){
    answer = firstNumber + secondNumber;
   }
   
-  private static void sub(){
+  public static void sub(){
     answer = firstNumber - secondNumber;
   }
 
-  private static void mult(){
+  public static void mult(){
     answer = firstNumber * secondNumber;
   }
 
-  private static void div(){
+  public static void div(){
     answer = firstNumber / secondNumber;
   }
 
