@@ -84,6 +84,14 @@ public class NewCalculator {
     answer = input;
   }
 
+  public static String getOperator() {
+    return operator;
+  }
+
+  public static void setOperator(String input) {
+    operator = input;
+  }
+
   public static void main(String[] args) {
     printInstructions();
     
