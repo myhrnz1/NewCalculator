@@ -9,6 +9,13 @@ public class NewCalculator {
 
   static Scanner scan = new Scanner(System.in);
 
+  public NewCalculator() {
+    firstNumber = 0;
+    secondNumber = 0;
+    answer = 0;
+    operator = "-1";
+  }
+
   public static void add(){
    answer = firstNumber + secondNumber;
   }
