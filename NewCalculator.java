@@ -67,6 +67,14 @@ public class NewCalculator {
   public static void setFirstNumber(double input) {
     firstNumber = input;
   }
+  
+  public static double getSecondNumber() {
+    return secondNumber;
+  }
+
+  public static void setSecondNumber(double input) {
+    secondNumber = input;
+  }
 
   public static void main(String[] args) {
     printInstructions();
