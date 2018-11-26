@@ -60,6 +60,14 @@ public class NewCalculator {
     System.out.println("Step 3: Enter a number.");
   }
 
+  public static double getFirstNumber() {
+    return firstNumber;
+  }
+
+  public static void setFirstNumber(double input) {
+    firstNumber = input;
+  }
+
   public static void main(String[] args) {
     printInstructions();
     
