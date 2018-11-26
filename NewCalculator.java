@@ -76,6 +76,14 @@ public class NewCalculator {
     secondNumber = input;
   }
 
+  public static double getAnswer() {
+    return answer;
+  }
+
+  public static void setAnswer(double input) {
+    answer = input;
+  }
+
   public static void main(String[] args) {
     printInstructions();
     
